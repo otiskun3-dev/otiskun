@@ -6,8 +6,8 @@
   "scripts": {
     "dev:client": "vite dev --port 5000",
     "dev": "NODE_ENV=development tsx server/index.ts",
-    "build": "tsc -p tsconfig.json",          
-    "start": "node dist/index.js",             
+    "build": "tsc -p tsconfig.json",          // or just "tsc" if you have no special flags
+    "start": "node dist/index.js"             // adjust according to your entry point
     "check": "tsc",
     "db:push": "drizzle-kit push"
   },
@@ -98,7 +98,7 @@
     "tailwindcss": "^4.1.14",
     "tsx": "^4.20.5",
     "typescript": "^5.6.3",
-    "vite": "^7.1.9",
+    "vite": "^7.1.9"
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.8"
